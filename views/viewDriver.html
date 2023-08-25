@@ -1,0 +1,30 @@
+<section class="row">
+    <div class="col-md-12">
+        <h3 class="jumbotron">View Drivers</h3>
+    </div>
+</section>
+
+{{msg}}
+<section class="row" style="margin-left:10%;">
+    <div class="col-md-10">
+         <table class="table">
+            <tr>
+                <th>Reg No</th>
+                <th>Surname</th>
+                <th>Others</th>
+                <th>DL Number</th>
+                <th>ID Number</th>
+                <th>Image URL</th>
+
+            </tr>
+            <tr ng-repeat="driver in drivers ">
+                <td>{{driver.reg_no}}</td>
+                <td>{{driver.surname}}</td>
+                <td>{{driver.others}}</td>
+                <td>{{driver.dl_number}}</td>
+                <td>{{driver.id_number}}</td>
+                <td>{{driver.img_url}}</td>
+            </tr>
+         </table>
+    </div>
+</section>

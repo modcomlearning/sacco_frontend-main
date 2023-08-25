@@ -1,0 +1,32 @@
+<section class="row">
+    <div class="col-md-12">
+        <h3 class="jumbotron">Sign Up</h3>
+    </div>
+</section>
+
+<section class="row" style="margin-left:10%;">
+   <div class="col-md-4">
+       <h4>Add Driver</h4>
+       <p class="lead text-center">{{msg}}</p>
+
+       <form>
+           <input type="text"  ng-model="reg_number" placeholder="Enter Registration Number" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="surname" placeholder="Your SurName" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="others" placeholder="Other Names" class="form-control" required>
+           <br>
+           <input type="number"  ng-model="dl_number" placeholder="Enter Driving License Number" class="form-control" required>
+           <br>
+           <input type="number"  ng-model="id_number" placeholder="Enter Your ID Number" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="img_url" placeholder="Enter Image" class="form-control" required>
+            <br>
+           <button type="submit" class="btn btn-success" ng-click="updateData(reg_number, surname, others, dl_number, id_number, img_url)">Save</button>
+       </form><br>
+   </div>
+
+   <div class="col-md-8">
+       <img src="http://modcom.co.ke/pics/kids.jpg" alt="" class="img-fluid" width="80%">
+   </div>
+</section>

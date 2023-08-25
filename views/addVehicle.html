@@ -1,0 +1,29 @@
+
+<section class="row" style="margin-left:10%;">
+   <div class="col-md-4">
+       <h4>Add Vehicle</h4>
+       <p class="lead text-center">{{msg}}</p>
+
+       <form>
+           <input type="text"  ng-model="reg_number" placeholder="Enter Registration Number" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="type" placeholder="Enter Vehicle Type" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="make" placeholder="Enter Vehicle Make" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="chassis_no" placeholder="Enter Vehicle Chassis Number" class="form-control" required>
+           <br>
+           <input type="text"  ng-model="route" placeholder="Enter Vehicle Route" class="form-control" required>
+           <br>
+           <input type="number"  ng-model="owner_id" placeholder="Enter Vehicle Owner ID" class="form-control" required>
+            <br>
+            <input type="text"  ng-model="img_url" placeholder="Enter Image URL" class="form-control" required>
+            <br>
+           <button type="submit" class="btn btn-success" ng-click="updateData(reg_number, type, make, chassis_no, route, owner_id, img_url)">Save</button>
+       </form><br>
+   </div>
+
+   <div class="col-md-8">
+       <img src="http://modcom.co.ke/pics/kids.jpg" alt="" class="img-fluid" width="80%">
+   </div>
+</section>

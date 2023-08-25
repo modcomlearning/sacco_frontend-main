@@ -1,0 +1,34 @@
+<section class="row">
+    <div class="col-md-12">
+        <h3 class="jumbotron">View Vehicles</h3>
+    </div>
+</section>
+
+{{msg}}
+<section class="row" style="margin-left:10%;">
+    <div class="col-md-10">
+         <table class="table">
+            <tr>
+                <th>Reg No</th>
+                <th>Type</th>
+                <th>Make</th>
+                <th>Chassis Number</th>
+                <th>Route</th>
+                <th>Owner ID</th>
+                <th>Image URL</th>
+
+
+            </tr>
+            <tr ng-repeat="vehicle in vehicles ">
+                <td>{{vehicle.reg_no}}</td>
+                <td>{{vehicle.type}}</td>
+                <td>{{vehicle.make}}</td>
+                <td>{{vehicle.chassis_no}}</td>
+                <td>{{vehicle.route}}</td>
+                <td>{{vehicle.owner_id}}</td>
+                <td>{{vehicle.img_url}}</td>
+
+            </tr>
+         </table>
+    </div>
+</section>
